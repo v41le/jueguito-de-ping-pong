@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zclosures", "zclosures", "{DC599C94-9312-4168-B938-DBED8F3D466B}"
+	ProjectSection(SolutionItems) = preProject
+		index22.html = index22.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "json", "json", "{E6DFE164-1566-475F-ACF4-F1A8710EEFDE}"
+	ProjectSection(SolutionItems) = preProject
+		index2.html = index2.html
+		main.js = main.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70BC9796-E4A1-4073-9092-501FDB486640}
+	EndGlobalSection
+EndGlobal
