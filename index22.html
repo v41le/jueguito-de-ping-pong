@@ -1,0 +1,33 @@
+﻿<!-- no le pongan cuidado a este index :P ignorenlon -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <button id="btn">Click</button>
+    <script>
+        (function () {
+            document.getElementById('btn').addEventListener("click", function () {
+                console.log("hizo clic en mi");
+            });
+
+            setTimeout(function () {
+                console.log(hola_mundo("valle"));
+            }, 5000);
+
+        })();
+
+        function hola_mundo(nombre) {
+            function construct() {
+                return "bye bye " + nombre;
+            }
+            return construct();
+        }
+
+    </script>
+</body>
+</html>
