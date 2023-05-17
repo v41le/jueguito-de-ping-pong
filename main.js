@@ -69,7 +69,7 @@ para que no infecte el scope del proyecto y se ejecute a si misma*/
 
             this.speed_y = this.speed * -Math.sin(this.bounce_angle);
             this.speed_x = this.speed * Math.cos(this.bounce_angle);/**hubo que agregar atributo angulo de rebote y lo agregamos en la linea 35*/
-
+    
             if (this.x > (this.board.width / 2)) this.direction = -1; /**cambiamos la direccion dependiendo cual barra colisiona si es la izquierda va a la derecha si es derecha  a la izquierda*/
             else this.direction = 1;
         }/**este bloque de codigo lo que hace es calcular el angulo en que va moverse la pelota*/
@@ -235,15 +235,16 @@ para que no infecte el scope del proyecto y se ejecute a si misma*/
 
             }
         /*}*/
-    }   
+    }
+     
 })();
 
 var board = new Board(800, 400);/*instanciamos un nuevp objeto de la clase board */
-var bar = new Bar(20, 100, 40, 100, board);
-var bar_2 = new Bar(738, 100, 40, 100, board);
+var bar = new Bar(20, 150, 40, 100, board);
+var bar_2 = new Bar(735, 150, 40, 100, board);
 var canvas = document.getElementById('canvas');/*obtenemos el canvas primero que todo, obtenemos con el get elementos del document object model(la pagina) */
 var board_view = new BoardView(canvas, board); /*un nuevo objeto boadview */
-var ball = new Ball(350, 100, 10, board);
+var ball = new Ball(400, 200, 10, board);
 
 
 /*
@@ -258,7 +259,7 @@ lo reemplazamos por requestanimationframe el cual puse en la linea de cod 137*/
  * que dar click en el elemento para empezar a mover las barras, y ya vamos un poco mas avanzado en experiencia de usuario
  */
 document.addEventListener("keydown", function (ev) {/**el evento a escuchar sera un keydown y apenas suceda el evento se ejecuta la funcion donde ev va traer informacion del evento*/
-
+    
 
     if (ev.keyCode == 38) { /**keyCode es un atributo del mismo evento que permite identificar la tecla que teclea el usuario*/
         ev.preventDefault();/**esto lo ponemos por que se estaba cayendo la pagina al bajar la barra con la flecha,
@@ -308,8 +309,8 @@ y para que contantemente se siga actualizando la ponemos en main tambien*/
 
 /*la siguiente funcion va ejecutar todos los elementos*/
 function controller() {
-
+    
     /**aqui antes estaban los var de la linea 100 a 105 aproximadamente para que notes que se deben mover para mejorar el codigo*/
     board_view.play();/**board este metodo play esta reemplazando a lo que pase a lalinea 86 y 87 que era borra y dicujar pero ahora todo en uno (play)*/
-    window.requestAnimationFrame(controller);
+    requestAnimationFrame(controller);
 }  
