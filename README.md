@@ -16,4 +16,4 @@ Función controller: Esta función es el corazón del juego. Se llama de forma r
 Mecánica del juego: El juego permite a los jugadores mover sus barras con las teclas "W" y "S" para uno de los jugadores, y las teclas de flecha hacia arriba y hacia abajo para el otro jugador. La pelota rebota en las barras y en los bordes del tablero. Cuando la pelota cruza los límites laterales, se suma un punto al jugador correspondiente.
 Elementos HTML: El programa interactúa con elementos HTML como el canvas y elementos para mostrar el marcador del juego.
 
-![pingpongjavascript](https://github.com/v41le/jueguito-de-ping-pong/assets/125850483/b6e85434-f7b0-45d3-b00c-5fccd929ee9e)
+![pingpongjavascript](https://github.com/v41le/jueguito-de-ping-pong/assets/125850483/9c9dd6e7-ef4c-4992-a872-90daf40abfdc)
